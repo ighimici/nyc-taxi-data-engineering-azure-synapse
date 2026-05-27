@@ -24,6 +24,9 @@ This project uses a combination of file formats and reference datasets, includin
 - **Vendor** - Quoted CSV
 - **Trip Data** - Parquet, CSV, and Delta
 
+<img width="593" height="329" alt="image" src="https://github.com/user-attachments/assets/00eba23a-e157-4aa7-949b-6c82aa0866c1" />
+
+
 ## 3. Solution Architecture
 
 The solution is designed around Azure Synapse Serverless SQL and is organized into the following key stages:
@@ -33,6 +36,9 @@ The solution is designed around Azure Synapse Serverless SQL and is organized in
 - **Data Ingestion**: Uses external tables, stored procedures, and views to ingest and expose partitioned data files
 - **Data Transformation**: Uses T-SQL, CETAS, views, and stored procedures to cleanse, combine, aggregate, and persist analytical datasets in Parquet format
 - **Reporting**: Uses Power BI dashboards to deliver insights into taxi demand, payment patterns, and operational performance
+
+<img width="590" height="308" alt="image" src="https://github.com/user-attachments/assets/1af8997b-9aef-4454-af03-737f9a07ff0d" />
+
 
 ## 4. Project Requirements
 
@@ -129,6 +135,7 @@ ORDER BY v_taxi_zone.borough;
 ```
 
 **Output:**
+<img width="1208" height="256" alt="image" src="https://github.com/user-attachments/assets/20cd8953-ee8e-468c-b344-66fa2fd21573" />
 
 
 ### 4.2 Data Virtualization
@@ -167,10 +174,12 @@ IF NOT EXISTS (SELECT * FROM sys.external_file_formats WHERE name = 'csv_file_fo
 ```
 
 #### Full Example Using External Source and External File Format
+<img width="257" height="190" alt="image" src="https://github.com/user-attachments/assets/53b1dbf2-1313-431b-9285-636e07361907" />
 
 ### 4.3 Data Ingestion
 
 The data is stored across multiple partitioned folders, so the ingestion layer is designed to combine files from different paths and expose them through views. This approach simplifies querying while preserving partition columns such as `year` and `month` for efficient filtering.
+<img width="1186" height="650" alt="image" src="https://github.com/user-attachments/assets/425df06e-97fc-4f5b-acc9-522524cedba3" />
 
 ### Create a View for Green Taxi Trip Data
 
