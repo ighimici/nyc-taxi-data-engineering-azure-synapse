@@ -333,3 +333,5 @@ The reporting layer is focused on delivering business-ready insights through Pow
 - Aggregated metrics for distance, duration, and fare amount
 
 #### Sample Dashboard
+<img width="1261" height="714" alt="image" src="https://github.com/user-attachments/assets/e440d28c-7918-4b9f-9f94-39afc6392c25" />
+<img width="1257" height="716" alt="image" src="https://github.com/user-attachments/assets/ca0e82b8-5d4d-40a6-98aa-0ae21571f951" />
